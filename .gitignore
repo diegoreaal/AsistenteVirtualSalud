@@ -1,0 +1,25 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+
+# ---- Virtual environment ----
+venv/
+ENV/
+env/
+.venv/
+
+# ---- Variables de entorno ----
+.env
+
+# ---- Archivos de sistema ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- IDEs ----
+.vscode/
+.idea/
