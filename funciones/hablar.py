@@ -2,12 +2,9 @@ import pyttsx3
 
 def hablar(texto):
     engine = pyttsx3.init()
-
-    voices = engine.getProperty('voices')
-    for voice in voices:
-        if "spanish" in voice.name.lower() or "es" in voice.id.lower():
-            engine.setProperty('voice', voice.id)
-            break
-
+    engine.setProperty(
+        "voice",
+        "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech\\Voices\\Tokens\\TTS_MS_ES-ES_HELENA_11.0"
+    )
     engine.say(texto)
     engine.runAndWait()

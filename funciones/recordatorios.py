@@ -1,9 +1,9 @@
 import time
 import threading
 from datetime import datetime
+import os.path
 from funciones.hablar import hablar
 
-#Recibimos el input del usuario con un formato válido
 def _parse_hhmm(hora_str: str) -> str:
     return datetime.strptime(hora_str.strip(), "%H:%M").strftime("%H:%M")
 
