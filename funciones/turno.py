@@ -83,7 +83,7 @@ def agendar_turno(duracion_min=30,
         created = service.events().insert(calendarId="primary", body=event).execute()
 
         hablar("Turno agendado correctamente en Google Calendar.")
-        print("✅ Evento creado:", created.get("htmlLink"))
+        print("Evento creado:", created.get("htmlLink"))
         return created.get("htmlLink")
 
     except Exception as e:
